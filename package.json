@@ -1,0 +1,19 @@
+{
+  "name": "familiar_aura",
+  "version": "0.0.1",
+  "description": "A service, running on a server, that Familiar can query, to show you a status report.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/skyleaf-design/familiar_aura.git"
+  },
+  "author": "Raphael Traviss",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/skyleaf-design/familiar_aura/issues"
+  },
+  "homepage": "https://github.com/skyleaf-design/familiar_aura#readme"
+}
