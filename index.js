@@ -15,7 +15,7 @@ if (!(output_url && input_url)) {
 
 
 // Here it is! Our sole source of application state: a single stored string.
-let last_seen_ip = null;
+var last_seen_ip = null;
 
 
 const requestHandler = (request, response) => {
@@ -80,16 +80,14 @@ server.listen(port, (err) => {
 
 // Note: will not return falsy values such as "", FALSE, or null.
 function get_option_value(option_name) {
-  console.log("ran");
   return process.argv.slice(2).reduce(function(state, current_flag) {
     // Cut off the -- from the option.
-    let option_string = current_flag.slice(2);
+    var option_string = current_flag.slice(2);
   
     // Check if the option text matches an option that we expect.
     if (option_string.slice(0, option_name.length) == option_name) {
       // Capture all text after the option name.
-      console.log("value", option_string.slice(option_name.length + 1));
-      let the_value = option_string.slice(option_name.length + 1);
+      var the_value = option_string.slice(option_name.length + 1);
       return the_value;
     }
     // Truthy values will "bubble up" and clobber falsy values.
