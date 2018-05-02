@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/skyleaf-design/familiar_aura/issues"
   },
-  "homepage": "https://github.com/skyleaf-design/familiar_aura#readme"
+  "homepage": "https://github.com/skyleaf-design/familiar_aura#readme",
+  "devDependencies": {
+    "debug": "^3.1.0",
+    "tape": "^4.9.0"
+  }
 }
