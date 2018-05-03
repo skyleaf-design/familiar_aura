@@ -24,7 +24,7 @@ const requestHandler = (request, response) => {
     case "/" + input_url:
       const this_ip = request.headers['x-forwarded-for'] || request.connection.remoteAddress;
       last_seen_ip = this_ip;
-      response.end();
+      response.end(last_seen_ip);
     break;
 
     case "/" + output_url:
